@@ -1,0 +1,156 @@
+.homeContent {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  animation: fadeIn 1s ease-out forwards;
+  z-index: 10;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Service Badges */
+.serviceBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--muted);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  color: var(--secondary-foreground);
+}
+
+.serviceBadge:hover {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  transform: translateY(-2px);
+}
+
+/* Description Text */
+.descriptionText {
+  color: var(--secondary-foreground);
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+.descriptionText span {
+  font-weight: 500;
+}
+
+/* Explore Link */
+.exploreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+}
+
+.exploreLink:hover {
+  color: var(--secondary-foreground);
+}
+
+.exploreLink:hover svg {
+  transform: translateX(0.25rem);
+}
+
+.exploreLink svg {
+  transition: transform 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(2rem, -2rem) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .homeContent {
+    padding: 1rem;
+  }
+  
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .serviceBadge {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .descriptionText {
+    font-size: 0.8125rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeText {
+    padding: 1rem 0;
+  }
+
+  .serviceBadge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+
+  .exploreLink {
+    font-size: 0.8125rem;
+  }
+}

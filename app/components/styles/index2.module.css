@@ -1,0 +1,78 @@
+.section2 {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat(3, minmax(auto, auto));
+}
+
+.gridItem {
+  position: relative;
+  border: thin dashed #7f817f9f;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 20px;
+  color: #919191;
+  transition: background-color 0.2s ease;
+}
+
+.gridItem:hover {
+  background-color: #ffffff0c;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourServices {
+  margin: 10px 0 10px 0;
+}
+.serviceTextContainer {
+  margin-top: 10px;
+}
+
+.serviceName {
+  font-size: 22px;
+}
+
+.serviceDetails {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 1024px) {
+  .section2 {
+    padding: 0 40px;
+    height: 100vh;
+  }
+  .grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, minmax(auto, auto));
+  }
+
+  .gridItem {
+    position: relative;
+    border: thin dashed #7f817f9f;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 20px;
+    color: #919191;
+    transition: background-color 0.2s ease;
+  }
+
+  .gridItem:hover {
+    background-color: #ffffff0c;
+  }
+
+  .gridItemText {
+    font-size: 14px;
+  }
+}

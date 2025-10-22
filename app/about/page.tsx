@@ -69,7 +69,7 @@ const AboutUs = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Intellixel is a dynamic team driven by a shared vision to deliver
+            Intelixel is a dynamic team driven by a shared vision to deliver
             exceptional digital solutions that empower businesses worldwide.
           </p>
         </div>
@@ -89,8 +89,9 @@ const AboutUs = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-            Our founders sparked Intellixel’s journey, supported by a talented
-            team dedicated to creating impactful digital experiences.
+            Our founder & CEO - Shamim Sabuj- sparked Intelixel’s journey,
+            supported by a talented team dedicated to creating impactful digital
+            experiences.
           </p>
         </div>
 
@@ -114,7 +115,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-2xl font-semibold">Shamim Sabuj</h3>
             <p className="text-gray-400 mt-2 max-w-md text-center">
-              A creative thinker, Shamim ensures every solution delivers real
+              Founder & CEO, Shamim Sabuj ensures every solution delivers real
               value by bridging business goals with user needs.
             </p>
             <div className="flex space-x-4 mt-4">

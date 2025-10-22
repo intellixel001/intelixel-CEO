@@ -115,8 +115,8 @@ const AboutUs = () => {
             </div>
             <h3 className="text-2xl font-semibold">Shamim Sabuj</h3>
             <p className="text-gray-400 mt-2 max-w-md text-center">
-              Founder & CEO, Shamim Sabuj ensures every solution delivers real
-              value by bridging business goals with user needs.
+              Our Founder & CEO, Shamim Sabuj ensures every solution delivers
+              real value by bridging business goals with user needs.
             </p>
             <div className="flex space-x-4 mt-4">
               <Link
